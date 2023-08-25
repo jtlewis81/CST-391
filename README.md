@@ -1,6 +1,4 @@
-# CST-391
- 
-Repository for GCU class: JavaScript Web Application Development
+# CST-391: JavaScript Web Application Development
 
 Each assignment has its own subfolder, which includes a Markdown(.md) file for the assignment submission.
 
