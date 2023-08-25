@@ -9,11 +9,11 @@
 
 NodeJS Version
 
-![NodeJS Version](/activity%200%20screenshots/node%20version.png)
+![NodeJS Version](activity%200%20screenshots/node%20version.png)
 
 NPM Version
 
-![NPM Version](/activity%200%20screenshots/npm%20version.png)
+![NPM Version](activity%200%20screenshots/npm%20version.png)
 
 
 Console App
