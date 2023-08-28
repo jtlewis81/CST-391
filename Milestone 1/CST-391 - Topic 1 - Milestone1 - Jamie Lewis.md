@@ -42,7 +42,7 @@ The plan is to make a single page application that contains a list of all Sermon
 
 ### Database Design
 
-![ER Diagram](resources/ER%20Diagram.png);
+![ER Diagram](resources/ER%20Diagram.png)
 
 ---
 
