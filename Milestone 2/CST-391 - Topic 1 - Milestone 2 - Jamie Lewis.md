@@ -83,12 +83,12 @@ The plan is to make a single page application that contains a list of all Sermon
 
 Format for the following API calls: [HTTP Method] methodName {URI, root not included}
 
-- [GET] listAllSermons {/sermons}
-- [GET] listSermonById {/sermons?id=#}
-- [GET] listSermonBySeries {/sermons?series=seriesName}
-- [GET] listSermonBySpeaker {/sermons?speaker=seriesName}
-- [GET] listSermonByTitleSearch {/sermons/search/title/:searchTerm}
-- [GET] listSermonByReferenceSearch {/sermons/search/reference/:searchTerm}
+- [GET] readAllSermons {/sermons}
+- [GET] readSermonById {/sermons?id=#}
+- [GET] readSermonBySeries {/sermons?series=seriesName}
+- [GET] readSermonBySpeaker {/sermons?speaker=seriesName}
+- [GET] readSermonByTitleSearch {/sermons/search/title/:searchTerm}
+- [GET] readSermonByReferenceSearch {/sermons/search/reference/:searchTerm}
 - [POST] createSermon {/sermons}
 - [PUT] updateSermon {/sermons}
 - [DELETE] deleteSermon {/sermons}
