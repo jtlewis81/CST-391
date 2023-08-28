@@ -66,4 +66,4 @@ The plan is to make a single page application that contains a list of all Sermon
 
 ### Risks
 
-- ?
+- User input will need to be sanitized to guard against SQL injection.
