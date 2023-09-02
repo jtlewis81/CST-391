@@ -38,6 +38,8 @@ The overall design remains unchanged this week. The following table outlines upd
 
 #### TODO
 - Date column in MySQL database currently defaults to a current timestamp when creating a Sermon entry, to simplify initial API testing. This should get changed to needing to be supplied by the client, so that they can create the Sermon with the date it was recorded, rather than when it was added to SAM. The original plan is for a date picker in the UI, which will allow this.
+- I realized, while recording the screen cast of Postman, that I may need to create new database tables for Series and Speaker properties of a Sermon. If that is the case, I will change those columns of the Sermons table to take a foreign key. After thinking on it some more, I am not 100% sure this is necessary. I could alter the UI to allow for either selecting an existing value, or to take a new input, which would then be populated in the dropdown on the next use. This option may require a new DAO method, or possibly even a new class for each list.
+
 ---
 
 ### Description
