@@ -5,7 +5,7 @@ import express, {Request, Response} from 'express';
 const app = express();
 
 // Port number for the server to listen for requests on
-const port = 3000;
+const port = 5000;
 
 // Handle HTTP requests
 app.get('/', (req: Request, res: Response) => { res.send('Hello World from TypeScript on nodemon!')});

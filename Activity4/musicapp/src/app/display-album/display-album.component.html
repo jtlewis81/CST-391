@@ -1,0 +1,40 @@
+<div align="center">
+  <div class="card mb-6" style="max-width: 500px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <div style="height:150px; width:150px; overflow:visible;">
+          <img src="{{ album!.image }}" class="card-img" alt="{{ album!.title }}" width="150px" height="150px">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ album!.title }}</h5>
+          <p class="card-text">{{ album!.description }}</p>
+          <p class="card-text"><small class="text-muted">{{ album!.year }}</small></p>
+          <table>
+            <tr>
+              <td align="center">
+                <!-- <a [routerLink]="['/edit', album!.albumId]"><i class="fa fa-edit"></i></a> -->
+                <button class="btn btn-warning" type="button" [routerLink]="['/edit', album!.albumId]">EDIT</button>
+              </td>
+              <td align="center">
+                <!-- <a [routerLink]="['/delete', album!.albumId]"><i class="fa fa-trash"></i></a> -->
+                <button class="btn btn-danger" type="button" [routerLink]="['/delete', album!.albumId]">DELETE</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div *ngIf="tracks != null">
+        <h5>Track List</h5>
+        <div style="text-align:left;">
+          <ul class="list-group-flush">
+            <li class="list-group-item" *ngFor="let track of tracks">{{ track.number }}. {{ track.title }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
