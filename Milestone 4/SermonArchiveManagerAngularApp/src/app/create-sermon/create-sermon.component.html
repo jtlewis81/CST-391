@@ -1,0 +1,66 @@
+<div align="center" class="container" style="height: 100%; max-width: 100%; margin-top: 20px;">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        Add A Sermon
+      </div>
+      <div class="card-body" *ngIf="!wasSubmitted">
+        <p><span style="color: red;">*</span>Required field</p>
+        <form (ngSubmit)="onSubmit()" #createForm="ngForm">
+          <table>
+            <!-- Title -->
+            <tr>
+              <td><label for="title"><span style="color: red;">*</span>Title:</label></td>
+              <td><input type="text" id="title" name="title" style="width: 400px" required [(ngModel)]="sermon.title"></td>
+            </tr>
+            <!-- Speaker -->
+            <tr>
+              <td><label for="speaker"><span style="color: red;">*</span>Speaker:</label></td>
+              <td><input type="text" id="speaker" name="speaker" style="width: 400px" required [(ngModel)]="sermon.speaker"></td>
+            </tr>
+            <!-- Date -->
+            <tr>
+              <td><label for="date">Date:</label></td>
+              <td><input type="text" id="date" name="date" style="width: 400px" placeholder="MM-DD-YY" [(ngModel)]="sermon.date"></td>
+            </tr>
+            <!-- Series -->
+            <tr>
+              <td><label for="series">Series:</label></td>
+              <td><input type="text" id="series" name="series" style="width: 400px" [(ngModel)]="sermon.series"></td>
+            </tr>
+            <!-- References -->
+            <tr>
+              <td><label for="series"><span style="color: red;">*</span>References:</label></td>
+              <td>
+                <input type="text" id="reference" name="reference" style="width: 400px"
+                  placeholder="Sample Entries: Genesis 1:1 Genesis 1:2-4 Genesis 1:5,7" required [(ngModel)]="sermon.reference">
+              </td>
+            </tr>
+            <!-- Filepath -->
+            <tr>
+              <td><label for="filepath"><span style="color: red;">*</span>Audio File Path:</label></td>
+              <td>
+                <input type="file" id="filepath" name="filepath" accept=".mp3, .wma, .wav, .ogg"
+                  style="width: 400px" required [(ngModel)]="sermon.filepath">
+              </td>
+            </tr>
+
+            <br><br>
+
+            <tr>
+              <td>
+                <a class="btn btn-danger" href="#">CANCEL</a>
+              </td>
+              <td>
+                <button type="submit" class="btn btn-success" style="float: right;">SUBMIT</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="card-body" *ngIf="wasSubmitted">
+        Sermon added.
+      </div>
+    </div>
+  </div>
+</div>

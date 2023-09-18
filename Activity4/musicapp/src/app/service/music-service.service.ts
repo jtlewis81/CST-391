@@ -1,6 +1,5 @@
 // Import necessary modules and data
 import { Injectable } from '@angular/core';
-import exampledata from '../../data/sample-music-data.json';
 import { Artist } from './../models/artists.model';
 import { Album } from '../models/albums.model';
 import { HttpClient } from '@angular/common/http';

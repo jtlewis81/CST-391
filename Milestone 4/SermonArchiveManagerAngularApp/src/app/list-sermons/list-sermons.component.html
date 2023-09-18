@@ -1,0 +1,62 @@
+<div align="center" class="row no-gutters" style="margin: 0; margin-top: 20px;">
+  <!-- Sermon list box -->
+  <div class="col-md-10">
+    <div class="container" style="height: 100%; max-width: 100%">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            Sermon List
+          </div>
+          <div class="card-body" style="overflow-y: auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Select</th><th>Title</th><th>Speaker</th><th>Date</th><th>Series</th><th>Reference</th><th>File Path</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let sermon of sermons;">
+                  <td>
+                    <input type="radio" name="selectSermon" (click)="onSelectSermon(sermon)">
+                  </td>
+                  <td>{{ sermon.title }}</td>
+                  <td>{{ sermon.speaker}}</td>
+                  <td>{{ sermon.date }}</td>
+                  <td>{{ sermon.series }}</td>
+                  <td>{{ sermon.reference }}</td>
+                  <td>{{ sermon.filepath }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Filters and Buttons -->
+  <div class="col-md-2">
+    <!-- Edit/Delete Buttons -->
+    <div *ngIf="this.selectedSermon != null">
+      <div style="display: inline-block; margin: 5px;">
+        <button class="btn btn-warning" type="button" [routerLink]="['/edit', selectedSermon!.id]">
+          EDIT
+        </button>
+      </div>
+      <div style="display: inline-block; margin: 5px;">
+        <button class="btn btn-danger" type="button" [routerLink]="['/delete', selectedSermon!.id]">
+          DELETE
+        </button>
+      </div>
+    </div>
+    <!-- Filters -->
+    <div style="margin-top: 20px;">
+      <!-- small heading and clear button
+      <div style="display: block; text-align: center;">
+        <h3 style="display: inline-block; margin-bottom: 0px; padding-right: 30px; margin-top: 1px;">Filters</h3>
+        <button class="btn btn-danger" style="float: right; margin-right: 30px;">
+          CLEAR
+        </button>
+      </div>-->
+    </div>
+  </div>
+</div>

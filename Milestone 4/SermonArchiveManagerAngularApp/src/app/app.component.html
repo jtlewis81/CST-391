@@ -1,0 +1,26 @@
+<div style="text-align:center; margin-bottom: 20px;">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+
+<div>
+  <nav class="navbar navbar-expand-lg bg-light p-0">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: space-around;">
+        <ul class="navbar-nav">
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Sermon List</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" routerLink="/create">Add Sermon</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.mlibc.org" target="_blank">Church Home Page</a></li>
+          <li class="nav-item"><a class="nav-link" href="" (click)="displayVersion()">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
