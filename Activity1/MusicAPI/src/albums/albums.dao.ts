@@ -30,7 +30,7 @@ export const createAlbum = async (album: Album) => {
 };
 
 export const updateAlbum = async (album: Album) => {
-    return execute<OkPacket>(albumQueries.updateAlbum, [album.title, album.artist, album.image, album.year, album.description, album.albumId]);
+    return execute<OkPacket>(albumQueries.updateAlbum, [album.title, album.artist, album.description, album.year, album.image, album.albumId]);
 };
 
 export const deleteAlbum = async (albumId: number) => {

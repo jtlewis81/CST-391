@@ -1,0 +1,11 @@
+.note
+{
+    font-size: 14px;
+    color: lightslategray;
+    font-style: italic;
+}
+
+.btn-float-right
+{
+    float: right;
+}
