@@ -40,6 +40,8 @@ This week, a front-end application was developed using React. The application us
 | UI Wireframes | updated diagram image | Milestone 5/Week 7 |
 | UML Class Diagram | updated diagram image | Milestone 5/Week 7 |
 | TODO | updated with outstanding issues | Milestone 5/Week 7 |
+| Presentation Video Link | added section with YouTube Link | Milestone 5/Week 7 |
+| | | |
 <!-- for future Milestone updates
 | | | Milestone 6/Week 8 |
 -->
@@ -47,6 +49,12 @@ This week, a front-end application was developed using React. The application us
 #### TODO
 
 - Minor additions to be added to the API documentation, even though they are not currently used within the application.
+
+---
+
+### Presentation Video Link
+
+https://youtu.be/PJp9iIt1f00
 
 ---
 
