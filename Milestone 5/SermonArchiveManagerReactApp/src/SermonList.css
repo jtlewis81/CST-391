@@ -1,0 +1,46 @@
+.row
+{
+    margin: 0px;
+}
+
+.formCol
+{
+    padding: 20px;
+}
+
+.dataDisplay
+{
+    overflow: hidden;
+}
+
+.createBtn
+{
+    padding-bottom: 20px;
+}
+
+#search-box
+{
+    margin-top: 20px;
+}
+
+.listTable table
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.listTable thead
+{
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+}
+
+.listTable tr 
+{
+    border-top: 1px solid black;
+}
+
+.listTable th, td
+{
+    padding: 5px;
+}
