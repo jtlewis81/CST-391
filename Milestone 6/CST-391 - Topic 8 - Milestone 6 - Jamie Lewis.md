@@ -52,7 +52,7 @@ Not all planned features were able to be implemented in either front-end applica
 | Presentation Video Link | added section with YouTube Link | Milestone 5/Week 7 |
 | | | |
 | Presentation Video Link | updated link for final presentation | Milestone 6/Week 8 |
-|
+| | | |
 
 #### TODO
 
